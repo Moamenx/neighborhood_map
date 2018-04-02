@@ -108,7 +108,7 @@ var InitModel = function () {
            // place.marker.insert(false);	   
 		   place.marker.setVisible(false);
            
-            if (place.name().toLowerCase().indexOf(searchInput) !== 0) {
+            if (place.name().toLowerCase().indexOf(searchInput) !== -1) {
                 self.visible.push(place);
             }
         });
